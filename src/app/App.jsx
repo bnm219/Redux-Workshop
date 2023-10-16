@@ -1,5 +1,6 @@
 import TransactionHistory from "../features/transactions/TransactionHistory";
 import Transactions from "../features/transactions/Transactions";
+import { store } from "@reduxjs/toolkit";
 
 import "./app.css";
 

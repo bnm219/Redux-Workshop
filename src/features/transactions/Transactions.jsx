@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./transactions.scss";
+import { withdrawal } from "./transactionsSlice";
 
 /**
  * Allows users to deposit to, withdraw from, and transfer money from their account.
@@ -14,6 +15,9 @@ export default function Transactions() {
   /** Dispatches a transaction action based on the form submission. */
   const onTransaction = (e) => {
     e.preventDefault();
+    if (withdrawal){
+      
+    }
 
     // This changes depending on which button the user clicked to submit the form.
     // It will be either "deposit", "withdraw", or "transfer".
