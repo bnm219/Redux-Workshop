@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import transactionsReducer from "./transactionsSlice"; // Replace this with the correct import path
+import { withdrawal, deposit, transfer } from "../features/transactions/transactionsSlice"; // Replace this with the correct import path
 
-export const store = configureStore({
+export default store = configureStore({
   reducer: {
     transactions: transactionsReducer,
    
